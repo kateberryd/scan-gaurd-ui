@@ -7,12 +7,12 @@ type Props = {};
 
 const SecondSection = (props: Props) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row px-4 py-8 w-full">
-      <div className="md:w-1/2 flex flex-col items-center justify-center">
-        <Housing className="h-full w-full object-cover" />
+    <div className="lg:grid-cols-2 grid px-20 py-16 w-full gap-12 items-center justify-center ">
+      <div className="lg:block hidden w-1/2">
+        <Housing />
       </div>
-      <div className="md:w-1/2 gap-[15px] flex flex-col items-center justify-center">
-        <h1 className="text-[25px] font-bold grid border-separate w-fit borde-t mb-4">
+      <div className="flex flex-col sm:items-center sm:text-center md:items-start md:text-start">
+        <h1 className="text-[25px] font-bold grid border-separate w-fit mb-4">
           <span>Trusted Authentication,</span>
           <span>Exclusively from ScanGuard</span>{" "}
         </h1>
@@ -28,6 +28,9 @@ const SecondSection = (props: Props) => {
             borderColor="white"
           />
         </div>
+      </div>
+      <div className="lg:hidden  block">
+        <Housing />
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ type Props = {};
 
 const ThirdSection = (props: Props) => {
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-8 w-full">
-      <h1 className="text-[25px] font-bold grid border-separate w-fit borde-t mb-4">
+    <div className="flex flex-col  w-full px-20 py-16 gap-2  items-center text-center md:items-start md:text-start">
+      <h1 className="text-[25px] font-bold  border-separate w-fit  mb-4">
         Showcase Your Authentic Products—Add your items to our platform to
         ensure buyers trust your brand when they scan your product's barcode.
       </h1>{" "}
