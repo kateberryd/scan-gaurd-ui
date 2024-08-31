@@ -1,10 +1,16 @@
 "use client"
-import Header from "./components/Header";
+import * as Components from "./components";
 
 export default function Home() {
   return (
-    <main className="px-5 py-5">
-      <Header />
+    <main className=" bg-black text-white">
+      <Components.Header />
+      <Components.FirstSection/>
+      <Components.SecondSection/>
+      <Components.ThirdSection/>
+      <Components.FourthSection/>
+
+
     </main>
   );
 }
