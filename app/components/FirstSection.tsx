@@ -2,13 +2,14 @@ import React from "react";
 import Btn from "./Btn";
 import { BarcodeIcon } from "@/public/svg";
 import Housing from "@/public/svg/housing";
-
+import housing from "@/public/housing.svg";
+import Image from "next/image";
 type Props = {};
 
 const FirstSection = (props: Props) => {
   return (
-    <div className="px-20  py-16 w-full grid lg:grid-cols-2 gap-12 sm:justify-center items-center">
-      <div className="flex flex-col md:items-start md:text-start  sm:items-center sm:text-center">
+    <div className="px-20  py-16 w-full grid md:grid-cols-2 gap-12 sm:justify-center items-center">
+      <div className="flex flex-col md:items-start md:text-start  items-center text-center">
         <h1 className="text-[25px] font-bold w-fit  mb-4">
           <span>Your Gateway to Authentic Products </span>
           <hr />
@@ -40,8 +41,8 @@ const FirstSection = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 block">
-        <Housing />
+      <div className="block">
+        <Image src={housing} alt="housing" />
       </div>
     </div>
   );

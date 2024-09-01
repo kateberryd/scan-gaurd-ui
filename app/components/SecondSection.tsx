@@ -2,16 +2,17 @@ import React from "react";
 import { Btn } from ".";
 import { ForwardIcon } from "@/public/svg";
 import Housing from "@/public/svg/housing";
-
+import Image from "next/image";
+import housing from "@/public/housing.svg";
 type Props = {};
 
 const SecondSection = (props: Props) => {
   return (
-    <div className="lg:grid-cols-2 grid px-20 py-16 w-full gap-12 items-center justify-center ">
-      <div className="lg:block hidden w-1/2">
-        <Housing />
+    <div className="md:grid-cols-2 grid px-20 py-16 w-full gap-12 items-center justify-center ">
+      <div className="lg:block hidden ">
+        <Image src={housing} alt="housing" />
       </div>
-      <div className="flex flex-col sm:items-center sm:text-center md:items-start md:text-start">
+      <div className="flex flex-col items-center text-center md:items-start md:text-start">
         <h1 className="text-[25px] font-bold grid border-separate w-fit mb-4">
           <span>Trusted Authentication,</span>
           <span>Exclusively from ScanGuard</span>{" "}
@@ -29,8 +30,8 @@ const SecondSection = (props: Props) => {
           />
         </div>
       </div>
-      <div className="lg:hidden  block">
-        <Housing />
+      <div className="lg:hidden block ">
+        <Image src={housing} alt="housing" />
       </div>
     </div>
   );
