@@ -1,9 +1,9 @@
 import React from "react";
 import Btn from "./Btn";
 import { BarcodeIcon } from "@/public/svg";
-import Housing from "@/public/svg/housing";
 import housing from "@/public/housing.svg";
 import Image from "next/image";
+import { statisticsData } from "../data/StatisticsData";
 type Props = {};
 
 const FirstSection = (props: Props) => {
@@ -27,18 +27,12 @@ const FirstSection = (props: Props) => {
           />
         </div>
         <div className="flex flex-wrap gap-[20px] mb-4">
-          <div className="flex flex-col items-center">
-            <div className="text-[25px] font-bold">10+</div>
-            <div className="text-[15px]">Products</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-[25px] font-bold">20K+</div>
-            <div className="text-[15px]">Producers</div>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-[25px] font-bold">300K+</div>
-            <div className="text-[15px]">Scans</div>
-          </div>
+          {statisticsData.map((statistic) => (
+            <div key={statistic.label} className="flex flex-col items-center">
+              <div className="text-[25px] font-bold">{statistic.value}</div>
+              <div className="text-[15px]">{statistic.label}</div>
+            </div>
+          ))}
         </div>
       </div>
       <div className="block">

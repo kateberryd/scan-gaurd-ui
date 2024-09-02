@@ -1,9 +1,10 @@
 import React from "react";
 import { Btn } from ".";
-import { ForwardIcon } from "@/public/svg";
+import { BarcodeIcon, ForwardIcon } from "@/public/svg";
 import Housing from "@/public/svg/housing";
 import Image from "next/image";
 import housing from "@/public/housing.svg";
+import HeroSection from "./HeroSection";
 type Props = {};
 
 const SecondSection = (props: Props) => {
@@ -12,24 +13,16 @@ const SecondSection = (props: Props) => {
       <div className="lg:block hidden ">
         <Image src={housing} alt="housing" />
       </div>
-      <div className="flex flex-col items-center text-center md:items-start md:text-start">
-        <h1 className="text-[25px] font-bold grid border-separate w-fit mb-4">
-          <span>Trusted Authentication,</span>
-          <span>Exclusively from ScanGuard</span>{" "}
-        </h1>
-        <p className="mb-4">
-          Delivering simple, convenient, and trustworthy product verification to
-          over 300,000 customers nationwide.
-        </p>
-        <div className="flex">
-          <Btn
-            text="Learn more "
-            icon={<ForwardIcon />}
-            border="border"
-            borderColor="white"
-          />
-        </div>
-      </div>
+
+      <HeroSection
+        buttonText="Learn more "
+        icon={<ForwardIcon />}
+        title="Trusted Authentication,"
+        subtitle="Exclusively from ScanGuard"
+        text="Delivering simple, convenient, and trustworthy product verification to
+          over 300,000 customers nationwide."
+      />
+
       <div className="lg:hidden block ">
         <Image src={housing} alt="housing" />
       </div>

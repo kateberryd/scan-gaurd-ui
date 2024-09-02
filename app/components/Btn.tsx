@@ -28,9 +28,9 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`custom-button ${color || "bg-black"} ${
-        textColor || "text-white"
-      }  ${border || ""} ${borderColor || ""} ${
+      className={`custom-button ${color || ""} ${textColor || "text-white"}  ${
+        border || ""
+      } ${borderColor || ""} ${
         minw || "lg:min-w-[80px]"
       }  rounded-full px-7 py-2 flex gap-2 h-[45px] items-center`}
       onClick={onClick}
