@@ -23,6 +23,7 @@ const SecondSection = (props: Props) => {
           over 300,000 customers nationwide."
       />
 
+
       <div className="lg:hidden block ">
         <Image src={housing} alt="housing" />
       </div>

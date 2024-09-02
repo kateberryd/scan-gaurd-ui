@@ -2,7 +2,7 @@ import React from "react";
 import { Btn } from ".";
 import { ForwardIcon } from "@/public/svg";
 import Image from "next/image";
-import housing from "@/public/housing.svg";
+import frame from "@/public/frame.svg";
 import HeroSection from "./HeroSection";
 
 type Props = {};
@@ -18,7 +18,7 @@ const FourthSection = (props: Props) => {
           text="ScanGuard runs on the blockchain technology allowing relevant data about products used on a daily basis; production date, distribution, and expiration date, to be immutable and safely stored."
         />
         <div className="block">
-          <Image src={housing} alt="housing" />
+          <Image src={frame} alt="housing" />
         </div>
       </div>
     </div>
